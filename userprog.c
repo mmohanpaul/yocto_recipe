@@ -2,7 +2,7 @@
 int main()
 {
    #ifdef USE_SYSCALL
-        printf("Hello Syscall\n");
+        printf("Hello Yocto World\n");
    #else
         printf("Hello World\n");
    #endif

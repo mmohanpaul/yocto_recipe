@@ -10,8 +10,8 @@ TARGET = userprog
 all: $(TARGET)
 
 $(TARGET): $(TARGET).c
-        $(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(LDFLAGS) $(TARGET).c 
 
 clean:
-        rm -rf {TARGET}
+	rm -rf $(TARGET)
 
